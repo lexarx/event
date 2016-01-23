@@ -1,5 +1,8 @@
 {
   "name": "event",
   "version": "1.0.0",
-  "main": "event.js"
+  "main": "event.js",
+  "dependencies": {
+    "class": "github:lexarx/class"
+  }
 }
