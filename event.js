@@ -1,6 +1,13 @@
 var Class = require('class');
 
+/**
+ * @class Event
+ */
 var Event = Class.extend({
+	/**
+	 * @param {Function} callback
+	 * @param {*} [context]
+	 */
 	add: function(callback, context) {
 		if (this.handlers === undefined) {
 			this.handlers = [];
@@ -11,6 +18,10 @@ var Event = Class.extend({
 		});
 	},
 
+	/**
+	 * @param {Function} callback
+	 * @param {*} [context]
+	 */
 	remove: function(callback, context) {
 		if (this.handlers === undefined) {
 			return;
